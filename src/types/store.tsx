@@ -11,13 +11,10 @@ export interface State {
   loading: boolean;
   error: Error | null;
   questions: Array<Question>;
+  activeQuestion: string | null;
+  token: string | null;
 }
 
 export interface Error {
   message: string;
-}
-
-export interface Action {
-  type: string;
-  payload?: Array<Question> | Error;
 }

@@ -1,8 +1,15 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
 
-function App() {
-  return <Button color="primary">Hello World</Button>;
+import Questions from '../Questions';
+import Question from '../Question';
+
+const App = () => {
+  return (
+    <div className="container">
+      <Question />
+      <Questions />
+    </div>
+  );
 }
 
 export default App;
